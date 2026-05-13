@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <optional>
+#include <SFML/Graphics.hpp>
 using namespace std;
 
 class Board;
@@ -85,3 +86,54 @@ public:
     void startGame();
 };
 
+// ================================================================
+//  Concrete piece classes
+// ================================================================
+class King : public Piece {
+public:
+    King(); King(string c);
+    void   setPosition(int x, int y) override;
+    bool   isValidMove(int sX, int sY, int eX, int eY, Board&) override;
+    int    getPositionX() override; int getPositionY() override;
+    string getColour()    override; char getSymbol()   override;
+};
+class Queen : public Piece {
+public:
+    Queen(); Queen(string c);
+    void   setPosition(int x, int y) override;
+    bool   isValidMove(int sX, int sY, int eX, int eY, Board&) override;
+    int    getPositionX() override; int getPositionY() override;
+    string getColour()    override; char getSymbol()   override;
+};
+class Rook : public Piece {
+public:
+    Rook(); Rook(string c);
+    void   setPosition(int x, int y) override;
+    bool   isValidMove(int sX, int sY, int eX, int eY, Board&) override;
+    int    getPositionX() override; int getPositionY() override;
+    string getColour()    override; char getSymbol()   override;
+};
+class Bishop : public Piece {
+public:
+    Bishop(); Bishop(string c);
+    void   setPosition(int x, int y) override;
+    bool   isValidMove(int sX, int sY, int eX, int eY, Board&) override;
+    int    getPositionX() override; int getPositionY() override;
+    string getColour()    override; char getSymbol()   override;
+};
+class Knight : public Piece {
+public:
+    Knight(); Knight(string c);
+    void   setPosition(int x, int y) override;
+    bool   isValidMove(int sX, int sY, int eX, int eY, Board&) override;
+    int    getPositionX() override; int getPositionY() override;
+    string getColour()    override; char getSymbol()   override;
+};
+class Pawn : public Piece {
+public:
+    Pawn(); Pawn(string c);
+    void   setPosition(int x, int y) override;
+    bool   isValidMove(int sX, int sY, int eX, int eY, Board&) override;
+    int    getPositionX() override; int getPositionY() override;
+    string getColour()    override; char getSymbol()   override;
+};
