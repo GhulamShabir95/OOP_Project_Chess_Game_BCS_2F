@@ -8,9 +8,9 @@
 
 | Name | GitHub |
 |------|--------|
-| Member 1 | [Muhammad Saad](https://github.com/GhulamShabir95) |
-| Member 2 | [Ghulam Shabir](https://github.com/muhammadsaadcs) |
-| Member 3 | [Ahmad Mujtaba](https://github.com/MuhammadAhmadMujtaba) |
+| Member 1 | [Muhammad Saad (F250662)](https://github.com/GhulamShabir95) |
+| Member 2 | [Ghulam Shabir (F250785)](https://github.com/muhammadsaadcs) |
+| Member 3 | [Ahmad Mujtaba (F250803)](https://github.com/MuhammadAhmadMujtaba) |
 
 ---
 
