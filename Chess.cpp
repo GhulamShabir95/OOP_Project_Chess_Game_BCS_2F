@@ -87,8 +87,10 @@ Game::Game()
     window.setFramerateLimit(60);
 
     // Try common Windows system fonts
-    if (!font.openFromFile("C:/Windows/Fonts/segoeui.ttf"))
-        font.openFromFile("C:/Windows/Fonts/arial.ttf");
+    if (!font.openFromFile("C:/Windows/Fonts/segoeui.ttf") &&
+        !font.openFromFile("C:/Windows/Fonts/arial.ttf")) {
+        std::cerr << "Warning: failed to load a Windows font. Text may not render correctly." << std::endl;
+    }
 }
 
 // ================================================================
